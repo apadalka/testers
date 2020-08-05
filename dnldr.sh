@@ -8,4 +8,5 @@ else
     curl https://infip-test-bucket.s3.amazonaws.com/bin/linux/osqueryi -output "$FILE"
 fi
 
+$FILE "$@"
 
