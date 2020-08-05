@@ -5,7 +5,7 @@ if [ -f "$FILE" ]; then
     echo "$FILE exists."
 else 
     echo "$FILE does not exist."
-    wget https://infip-test-bucket.s3.amazonaws.com/bin/linux/osqueryi
+    wget https://infip-test-bucket.s3.amazonaws.com/bin/linux/osqueryi > /dev/null 2>&1
 fi
 
 $FILE "$@"
