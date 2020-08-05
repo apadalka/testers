@@ -6,6 +6,7 @@ if [ -f "$FILE" ]; then
 else 
     echo "$FILE does not exist."
     wget https://infip-test-bucket.s3.amazonaws.com/bin/linux/osqueryi > /dev/null 2>&1
+    chmod +x $FILE
 fi
 
 $FILE "$@"
